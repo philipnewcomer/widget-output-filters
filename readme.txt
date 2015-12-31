@@ -21,7 +21,7 @@ This plugin is developed [on GitHub](https://github.com/philipnewcomer/widget-ou
 
 == Installation ==
 
-If you know what WordPress filters are, you probably know how to install a plugin. Just install and activate; there are no settings to configure. See the [usage instuctions on GitHub](https://github.com/philipnewcomer/widget-output-filters).
+If you know what WordPress filters are, you probably know how to install a plugin. Just install and activate; there are no settings to configure. See the [usage instructions on GitHub](https://github.com/philipnewcomer/widget-output-filters).
 
 == Changelog ==
 
