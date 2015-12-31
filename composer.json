@@ -1,0 +1,15 @@
+{
+	"name": "philipnewcomer/widget-output-filters",
+	"description": "Enables developers to filter the output of any WordPress widget.",
+	"homepage": "http://philipnewcomer.net/wordpress-plugins/widget-output-filters/",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "Philip Newcomer",
+			"email": "contact@philipnewcomer.net",
+			"homepage": "http://philipnewcomer.net",
+			"role": "Developer"
+		}
+	],
+	"keywords": [ "wordpress", "widget", "widgets", "filter", "filters", "output", "html" ]
+}
