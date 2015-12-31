@@ -30,11 +30,11 @@ add_filter( 'widget_output', 'filter_widgets', 10, 4 );
 
 ## FAQ
 
-**Can't I just use output buffering in my sidebar.php template file, and modify widget output there?**
+**Can't I just use output buffering in my sidebar.php template file, and modify widget output there?**  
 Yes, but that method does not work in the WordPress Theme Customizer, or with widgets used in locations other than your output-buffered widget area. It also requires that widget area output buffering be built into the theme, and does not provide an easy way to target only one specific widget or widget type. This plugin provides widget type and widget ID parameters to your filter function, it works in the Theme Customizer, and does not require any support from the theme.
 
-**How is this plugin better than the widget_content filter already existing in the Widget Logic plugin?**
+**How is this plugin better than the widget_content filter already existing in the Widget Logic plugin?**  
 This plugin provides the widget type (or *base* ID) in its filter, in addition to the unique widget ID. This makes it possible to target all widgets of a specific type, without resorting to complicated [regular expressions](http://en.wikipedia.org/wiki/Regular_expression). With the Widget Logic filter, a developer has access only to the individual widget ID in his filter function. Also, if you are using Widget Logic only for its `widget_content` filter, then this plugin will be lighter in weight than having the entire Widget Logic functionality active unnecessarily.
 
-**If I am already using the Widget Logic plugin to control the visibility of my widgets, is this plugin compatible with Widget Logic's widget_content filter?**
+**If I am already using the Widget Logic plugin to control the visibility of my widgets, is this plugin compatible with Widget Logic's widget_content filter?**  
 Yes, this plugin coexists nicely with the Widget Logic plugin. However, if you are already using Widget Logic to manage the visibility of your widgets, the only reason you would need to use this plugin would be if you require the additional flexibility that this plugin provides. Otherwise Widget Logic's `widget_content` filter will do the job just as well.
