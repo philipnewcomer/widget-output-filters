@@ -7,16 +7,17 @@ This plugin was inspired by a similar filter in the [Widget Logic](https://wordp
 
 ## Usage
 
-This plugin provides a `widget_output` filter, which will be passed three parameters:
+This plugin provides a `widget_output` filter, which will be passed four parameters:
 
 1. The complete HTML output of the widget
 2. The widget type, or *base* ID; i.e. `meta` or `recent-posts`
 3. The full widget ID; i.e. `meta-2` or `recent-posts-5`
+4. The ID of the current sidebar; i.e. `sidebar-1`
 
 ### Example
 
 ```php
-function filter_widgets( $widget_output, $widget_type, $widget_id ) {
+function filter_widgets( $widget_output, $widget_type, $widget_id, $sidebar_id ) {
 
 	if ( 'my_widget' == $widget_type ) {
 		$widget_output = str_replace( 'something-to-find', 'something-to-replace', $widget_output );
@@ -24,7 +25,7 @@ function filter_widgets( $widget_output, $widget_type, $widget_id ) {
 
 	return $widget_output;
 }
-add_filter( 'widget_output', 'filter_widgets', 10, 3 );
+add_filter( 'widget_output', 'filter_widgets', 10, 4 );
 ```
 
 ## FAQ

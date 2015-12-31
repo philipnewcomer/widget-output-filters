@@ -51,6 +51,7 @@ class Widget_Output_Filters {
 		$original_callback = $wp_registered_widgets[ $widget_id ]['original_callback'];
 
 		$widget_id_base = $original_callback[0]->id_base;
+		$sidebar_id     = $original_callback_params[0]['id'];
 
 		if ( is_callable( $original_callback ) ) {
 
@@ -58,7 +59,15 @@ class Widget_Output_Filters {
 			call_user_func_array( $original_callback, $original_callback_params );
 			$widget_output = ob_get_clean();
 
-			echo apply_filters( 'widget_output', $widget_output, $widget_id_base, $widget_id );
+			/**
+			 * Filter the widget's output.
+			 *
+			 * @param string $widget_output  The widget's output.
+			 * @param string $widget_id_base The widget's base ID.
+			 * @param string $widget_id      The widget's full ID.
+			 * @param string $sidebar_id     The current sidebar ID.
+			 */
+			echo apply_filters( 'widget_output', $widget_output, $widget_id_base, $widget_id, $sidebar_id );
 		}
 	}
 }
