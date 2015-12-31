@@ -4,7 +4,7 @@ Donate Link:       https://philipnewcomer.net/donate/
 Tags:              widget, widgets, filter, filters, output, html
 Requires at least: 3.0
 Tested up to:      4.4
-Stable tag:        trunk
+Stable tag:        1.1
 License:           GPLv2 or later
 
 Enables developers to filter the output of any WordPress widget.
@@ -25,5 +25,9 @@ If you know what WordPress filters are, you probably know how to install a plugi
 
 == Changelog ==
 
+= 1.1 =
+* Refactor code
+* Add Composer support
+* Add sidebar ID as a parameter in the filter
 = 1.0 =
 * Initial release
