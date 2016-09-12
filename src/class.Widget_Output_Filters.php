@@ -71,6 +71,8 @@ class Widget_Output_Filters {
 		$widget_id         = $original_callback_params[0]['widget_id'];
 		$original_callback = $wp_registered_widgets[ $widget_id ]['original_callback'];
 
+		$wp_registered_widgets[ $widget_id ]['callback'] = $original_callback;
+
 		$widget_id_base = $original_callback[0]->id_base;
 		$sidebar_id     = $original_callback_params[0]['id'];
 
