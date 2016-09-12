@@ -7,9 +7,30 @@
 class Widget_Output_Filters {
 
 	/**
+	 * Contains the single instance of this class.
+	 *
+	 * @var Widget_Output_Filters
+	 */
+	private static $instance = null;
+
+	/**
+	 * Returns the single instance of this class.
+	 *
+	 * @return Widget_Output_Filters The single instance of this class.
+	 */
+	public static function get_instance() {
+
+		if ( null === self::$instance ) {
+			self::$instance = new self;
+		}
+
+		return self::$instance;
+	}
+
+	/**
 	 * Initializes the functionality by registering actions and filters.
 	 */
-	public function __construct() {
+	private function __construct() {
 
 		// Priority of 9 to run before the Widget Logic plugin.
 		add_filter( 'dynamic_sidebar_params', array( $this, 'filter_dynamic_sidebar_params' ), 9 );

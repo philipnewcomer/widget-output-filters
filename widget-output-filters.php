@@ -27,4 +27,4 @@
  */
 
 require_once( __DIR__ . '/src/class.Widget_Output_Filters.php' );
-new Widget_Output_Filters();
+Widget_Output_Filters::get_instance();
