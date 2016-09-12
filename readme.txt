@@ -7,7 +7,7 @@ Tested up to:      4.4
 Stable tag:        1.1
 License:           GPLv2 or later
 
-Enables developers to filter the output of any WordPress widget.
+A library which enables developers to filter the output of any WordPress widget.
 
 == Description ==
 

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Widget Output Filters
  * Plugin URI:  https://philipnewcomer.net/wordpress-plugins/widget-output-filters/
- * Description: Enables developers to filter the output of any WordPress widget.
+ * Description: A library which enables developers to filter the output of any WordPress widget.
  * Author:      Philip Newcomer
  * Author URI:  https://philipnewcomer.net
  * Version:     1.1
