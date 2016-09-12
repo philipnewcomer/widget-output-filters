@@ -5,7 +5,7 @@
  * Description: A library which enables developers to filter the output of any WordPress widget.
  * Author:      Philip Newcomer
  * Author URI:  https://philipnewcomer.net
- * Version:     1.1
+ * Version:     1.2.0
  * License:     GPLv2 or later
  *
  * Copyright (C) 2015 Philip Newcomer

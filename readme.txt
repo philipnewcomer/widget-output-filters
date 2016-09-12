@@ -3,8 +3,8 @@ Contributors:      philip.newcomer
 Donate Link:       https://philipnewcomer.net/donate/
 Tags:              widget, widgets, filter, filters, output, html
 Requires at least: 3.0
-Tested up to:      4.4
-Stable tag:        1.1
+Tested up to:      4.6
+Stable tag:        1.2.0
 License:           GPLv2 or later
 
 A library which enables developers to filter the output of any WordPress widget.
@@ -25,7 +25,11 @@ If you know what WordPress filters are, you probably know how to install a plugi
 
 == Changelog ==
 
-= 1.1 =
+= 1.2.0 =
+* Fix infinite loop when the same widget instance is rendered twice on the same page as some page builder plugins allow
+* Convert class to a singleton
+* Update docs
+= 1.1.0 =
 * Refactor code
 * Add Composer support
 * Add sidebar ID as a parameter in the filter
