@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Widget Output Filters
- * Plugin URI:  http://philipnewcomer.net/wordpress-plugins/widget-output-filters/
- * Description: Enables developers to filter the output of any WordPress widget.
+ * Plugin URI:  https://philipnewcomer.net/wordpress-plugins/widget-output-filters/
+ * Description: A library which enables developers to filter the output of any WordPress widget.
  * Author:      Philip Newcomer
- * Author URI:  http://philipnewcomer.net
- * Version:     1.1
+ * Author URI:  https://philipnewcomer.net
+ * Version:     1.2.0
  * License:     GPLv2 or later
  *
  * Copyright (C) 2015 Philip Newcomer
@@ -27,4 +27,4 @@
  */
 
 require_once( __DIR__ . '/src/class.Widget_Output_Filters.php' );
-new Widget_Output_Filters();
+Widget_Output_Filters::get_instance();
