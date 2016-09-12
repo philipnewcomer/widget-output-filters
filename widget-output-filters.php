@@ -1,10 +1,10 @@
 <?php
 /**
  * Plugin Name: Widget Output Filters
- * Plugin URI:  http://philipnewcomer.net/wordpress-plugins/widget-output-filters/
+ * Plugin URI:  https://philipnewcomer.net/wordpress-plugins/widget-output-filters/
  * Description: Enables developers to filter the output of any WordPress widget.
  * Author:      Philip Newcomer
- * Author URI:  http://philipnewcomer.net
+ * Author URI:  https://philipnewcomer.net
  * Version:     1.1
  * License:     GPLv2 or later
  *
